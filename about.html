@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Acerca de Sudoku online gratis — puzzles infinitos, ranking global, sudoku del día." />
+  <title>Acerca del juego — Sudoku</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .page-wrap { max-width: 680px; margin: 0 auto; padding: 24px 16px 48px; }
+    .page-header { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+    .back-btn { background: transparent; border: 1px solid var(--border-dim); color: var(--text-secondary); font-size: 13px; font-family: var(--font-ui); padding: 6px 14px; border-radius: 20px; text-decoration: none; transition: all 0.15s; }
+    .back-btn:hover { border-color: var(--accent); color: var(--accent-light); }
+    .page-title { font-family: var(--font-mono); font-size: 20px; font-weight: 700; color: var(--text-primary); }
+    .card { background: var(--bg-card); border: 1px solid var(--border-dim); border-radius: var(--radius-lg); padding: 24px; margin-bottom: 16px; }
+    .card h2 { font-size: 16px; font-weight: 700; color: var(--accent-light); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .card p { font-size: 14px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 10px; }
+    .card p:last-child { margin-bottom: 0; }
+    .features { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
+    .feature { background: var(--bg-surface); border: 1px solid var(--border-dim); border-radius: var(--radius-md); padding: 14px; }
+    .feature-icon { font-size: 22px; margin-bottom: 6px; }
+    .feature-title { font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+    .feature-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+    .diff-list { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+    .diff-row { display: flex; align-items: center; gap: 12px; background: var(--bg-surface); border-radius: var(--radius-sm); padding: 10px 14px; border: 1px solid var(--border-dim); }
+    .diff-name { font-weight: 700; font-size: 13px; color: var(--accent-light); width: 70px; }
+    .diff-desc { font-size: 12px; color: var(--text-secondary); }
+    .faq-item { margin-bottom: 16px; }
+    .faq-q { font-size: 14px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px; }
+    .faq-a { font-size: 13px; color: var(--text-secondary); line-height: 1.65; }
+    @media (max-width: 400px) { .features { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="page-header">
+      <a href="index.html" class="back-btn">← Volver al juego</a>
+      <span class="page-title">Sudoku<span style="color:var(--accent)">.</span></span>
+    </div>
+
+    <!-- Intro -->
+    <div class="card">
+      <h2>¿Qué es este Sudoku?</h2>
+      <p>Bienvenido a <strong>Sudoku</strong>, un juego de lógica online completamente gratuito y sin necesidad de registro. Generamos puzzles únicos de forma infinita, lo que significa que nunca te quedarás sin nuevos retos.</p>
+      <p>El Sudoku es uno de los juegos de lógica más populares del mundo. El objetivo es rellenar una cuadrícula de 9×9 con dígitos del 1 al 9, de manera que cada columna, cada fila y cada una de las nueve subcuadrículas de 3×3 contengan todos los dígitos del 1 al 9 sin repetirse.</p>
+    </div>
+
+    <!-- Features -->
+    <div class="card">
+      <h2>Características</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">♾️</div>
+          <div class="feature-title">Puzzles infinitos</div>
+          <div class="feature-desc">Generación automática de nuevos puzzles únicos cada vez que juegas.</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">☀️</div>
+          <div class="feature-title">Sudoku del día</div>
+          <div class="feature-desc">Un puzzle especial que cambia cada día, igual para todos los jugadores.</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📊</div>
+          <div class="feature-title">Estadísticas</div>
+          <div class="feature-desc">Seguimiento de tus partidas, victorias, mejor tiempo y promedio.</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🏆</div>
+          <div class="feature-title">Ranking global</div>
+          <div class="feature-desc">Compite con jugadores de todo el mundo y sube en el clasificador.</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💡</div>
+          <div class="feature-title">Pistas</div>
+          <div class="feature-desc">Hasta 3 pistas por partida para cuando te quedes atascado.</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">✏️</div>
+          <div class="feature-title">Modo notas</div>
+          <div class="feature-desc">Anota posibles valores en las celdas como en papel.</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🌍</div>
+          <div class="feature-title">Multiidioma</div>
+          <div class="feature-desc">Disponible en Español, English y Português.</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📱</div>
+          <div class="feature-title">Responsive</div>
+          <div class="feature-desc">Diseñado para móvil y escritorio. Sin instalación.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dificultades -->
+    <div class="card">
+      <h2>Niveles de dificultad</h2>
+      <div class="diff-list">
+        <div class="diff-row">
+          <span class="diff-name">Fácil</span>
+          <span class="diff-desc">46 números dados. Ideal para principiantes y para jugar relajado.</span>
+        </div>
+        <div class="diff-row">
+          <span class="diff-name">Medio</span>
+          <span class="diff-desc">36 números dados. El punto de partida para jugadores habituales.</span>
+        </div>
+        <div class="diff-row">
+          <span class="diff-name">Difícil</span>
+          <span class="diff-desc">28 números dados. Requiere técnicas intermedias de eliminación.</span>
+        </div>
+        <div class="diff-row">
+          <span class="diff-name">Experto</span>
+          <span class="diff-desc">22 números dados. Solo para los más experimentados.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="card">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq-item">
+        <div class="faq-q">¿Necesito crear una cuenta?</div>
+        <div class="faq-a">No. Puedes jugar directamente sin registrarte. Tus estadísticas personales se guardan en tu navegador de forma automática.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Cómo funciona el ranking global?</div>
+        <div class="faq-a">Al completar un puzzle, puedes elegir un apodo y enviar tu tiempo al ranking. Los mejores 10 tiempos de cada dificultad se muestran en el clasificador.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿El Sudoku del día es el mismo para todos?</div>
+        <div class="faq-a">Sí. El puzzle diario se genera usando la fecha como semilla, así que todos los jugadores tienen el mismo puzzle cada día.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Puedo jugar sin internet?</div>
+        <div class="faq-a">Una vez cargada la página, el juego funciona completamente sin conexión. El ranking global requiere internet para enviar y ver puntuaciones.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Qué significa autocompletar?</div>
+        <div class="faq-a">Cuando quedan 6 o menos celdas vacías, aparece el botón ✨ Completar que rellena automáticamente las celdas restantes con los valores correctos.</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <p style="text-align:center;font-size:12px;color:var(--text-secondary);margin-top:8px">
+      <a href="privacy.html" style="color:var(--accent-light);text-decoration:none">Política de Privacidad</a>
+      &nbsp;·&nbsp;
+      <a href="index.html" style="color:var(--accent-light);text-decoration:none">Jugar ahora</a>
+    </p>
+  </div>
+</body>
+</html>
